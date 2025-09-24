@@ -14,8 +14,11 @@ to initialize / add playwright to an existing project
 When prompted, choose / confirm:
 
 a. TypeScript or JavaScript (default: TypeScript)
+
 b. Tests folder name (default: tests, or e2e if tests already exists)
+
 c. Add a GitHub Actions workflow (recommended for CI)
+
 d. Install Playwright browsers (default: yes)
 
 Re-running the command does not overwrite the tests
@@ -33,7 +36,6 @@ For headless tests:
 
 > npx playwright test 
 
-or
 
 For headed tests:
 > npx playwright test --headed
@@ -58,9 +60,11 @@ Execute test using:
 
 To run in docker, run the following commands:
 
-> docker build -t playwright-tests .  // Creates a Docker image named playwright-tests based on the Dockerfile
+Create a Docker image named playwright-tests based on the Dockerfile
+> docker build -t playwright-tests .  
 
-> docker run --rm -v $(pwd):/app -w /app playwright-tests  // runs the test
+Run test after image is created
+> docker run --rm -v $(pwd):/app -w /app playwright-tests
 
 2. To check test run report dashboard filterable by the browser, passed, failed, skipped, flaky and more, run the following command
 
@@ -70,5 +74,7 @@ This dashboard is configured to open by default when there are failing tests
 
 
 Folders explanation
+
 tests/e2e - where end-to-end test can be found
+
 tests/pages - where page object models can be found
