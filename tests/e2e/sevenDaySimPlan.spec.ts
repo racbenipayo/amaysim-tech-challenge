@@ -4,7 +4,7 @@ import { sevenDaySimPlanPage } from '../pages/sevenDaySimPlanPage';
 import { cartPage } from '../pages/cartPage';
 import { checkOutPage } from '../pages/checkOutPage';
 
-test('Amaysim home page should contain SIM Plans', async ({ page }) => {
+test('Card Payment Failure for 7 Day SIM Plan', async ({ page }) => {
     const amaysimHome = new amaysimHomePage(page);
     const sevenDaySimPlan = new sevenDaySimPlanPage(page);
     const cart = new cartPage(page);

@@ -72,6 +72,8 @@ Run test after image is created
 
 This dashboard is configured to open by default when there are failing tests
 
+This project is integrated with Github Actions. A Workflow will automatically run every time a commit is made.
+
 
 Folders explanation
 

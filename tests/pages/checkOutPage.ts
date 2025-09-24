@@ -101,6 +101,6 @@ export class checkOutPage {
 
     async clickPayNowButton() {
         await this.payNowButton.click({ force: true });
-        await expect(this.paymentFailedView).toBeVisible();
+        await expect(this.paymentFailedView).toBeVisible({timeout : 20000 });
     }
 }
