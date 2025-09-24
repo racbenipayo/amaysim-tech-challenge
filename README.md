@@ -1,15 +1,14 @@
 # amaysim-tech-challenge
 QA Tech Challenge repository created as part of the interview process in Amaysim
 
-Setting Up
+<h2> <b> Setting Up </b> </h2>
 
-1. Clone Repository via SSH git@github.com:racbenipayo/amaysim-tech-challenge.git in Visual Studio Code
+<b> Clone Repository via SSH in Visual Studio Code </b>
 
-2. Upon cloning, open terminal and input command 
+<b> Upon cloning, open terminal and input command to initialize / add playwright to an existing project </b>
 
 > npm init playwright@latest
 
-to initialize / add playwright to an existing project
 
 When prompted, choose / confirm:
 
@@ -23,14 +22,15 @@ d. Install Playwright browsers (default: yes)
 
 Re-running the command does not overwrite the tests
 
-3. Run the following command to ensure all dependencies and packages are installed
+<b> Run the following command to ensure all dependencies and packages are installed </b> 
 
 > npm install -D @playwright/test@latest
+
 > npx playwright install --with-deps
 
-Running the tests
+<h2> <b> Running the tests </b> </h2>
 
-1. Input command below to run the tests (default: PROD environment)
+Input command below to run the tests (default: PROD environment)
 
 For headless tests:
 
@@ -72,10 +72,14 @@ Run test after image is created
 
 This dashboard is configured to open by default when there are failing tests
 
-This project is integrated with Github Actions. A Workflow will automatically run every time a commit is made.
 
 
-Folders explanation
+<b> This project is integrated with Github Actions. A Workflow will automatically run every time a commit is made. </b>
+
+
+
+
+<h2> <b> Folders explanation </b> </h2>
 
 tests/e2e - where end-to-end test can be found
 
