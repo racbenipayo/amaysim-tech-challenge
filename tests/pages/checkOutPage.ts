@@ -27,7 +27,7 @@ export class checkOutPage {
         this.inputDateOfBirthTextBox = page.getByRole('textbox', { name: 'date of birth' });
         this.inputEmailAddressTextBox = page.getByRole('textbox', { name: 'email address' });
         this.inputPasswordTextBox = page.getByRole('textbox', { name: 'create a password' });
-        this.inputContactNumberTextBox = page.getByRole('textbox', { name: 'contact number' });
+        this.inputContactNumberTextBox = page.locator('input[name="contactNumber"]');
         this.inputAddressTextBox = page.getByRole('textbox', { name: 'home or work address' });
         this.selectAddressInDropdown = page.getByText('Level 6 17-19 Bridge St,');
         this.acknowledgeTOSCheckBox = page.locator('label').filter({ hasText: 'I acknowledge that I have' }).locator('svg');
