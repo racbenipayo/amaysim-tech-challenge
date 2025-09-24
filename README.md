@@ -5,24 +5,7 @@ QA Tech Challenge repository created as part of the interview process in Amaysim
 
 <b> Clone Repository via SSH in Visual Studio Code </b>
 
-<b> Upon cloning, open terminal and input command to initialize / add playwright to an existing project </b>
-
-> npm init playwright@latest
-
-
-When prompted, choose / confirm:
-
-a. TypeScript or JavaScript (default: TypeScript)
-
-b. Tests folder name (default: tests, or e2e if tests already exists)
-
-c. Add a GitHub Actions workflow (recommended for CI)
-
-d. Install Playwright browsers (default: yes)
-
-Re-running the command does not overwrite the tests
-
-<b> Run the following command to ensure all dependencies and packages are installed </b> 
+<b> Upon cloning, run the following command to ensure all dependencies and packages are installed </b>
 
 > npm install -D @playwright/test@latest
 
