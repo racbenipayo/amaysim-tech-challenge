@@ -38,14 +38,35 @@ or
 For headed tests:
 > npx playwright test --headed
 
+
+To run a specific test:
+> npx playwright test tests/{file_name}.spec.ts
+
+
 To run the tests in STAGING environment, go to playwright.config.ts, change the URL to
 correct URL, then run the following command
 
 > STAGING=1 npx playwright test
 
+To run the tests in the terminal, open terminal then navigate to the directory where this project is saved
+
+> cd {path}/amaysim-tech-challenge
+
+Execute test using:
+
+> npx playwright test
+
+To run in docker, run the following commands:
+
+> docker build -t playwright-tests .  // Creates a Docker image named playwright-tests based on the Dockerfile
+
+> docker run --rm -v $(pwd):/app -w /app playwright-tests  // runs the test
+
 2. To check test run report dashboard filterable by the browser, passed, failed, skipped, flaky and more, run the following command
 
 > npx playwright show-report
+
+This dashboard is configured to open by default when there are failing tests
 
 
 Folders explanation
