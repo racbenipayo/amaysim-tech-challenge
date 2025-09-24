@@ -17,8 +17,11 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
+  // npx playwright show-report
    reporter: [['html', { outputFolder: 'reports' }]],
   use: {
+    // To run on STAGING env, use command STAGING=1 npx playwright test
+    // Change URL beside ? to appropriate STAGING env URL
     baseURL: process.env.STAGING === '1' ? 'https://amaysim.com.au'
          : 'https://amaysim.com.au',
   },
